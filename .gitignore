@@ -1,3 +1,4 @@
+# flask and venv
 venv/
 
 *.pyc
@@ -9,6 +10,14 @@ instance/
 .coverage
 htmlcov/
 
+
 dist/
 build/
 *.egg-info/
+
+# keys
+keys.json
+
+
+# Chromedriver
+chromedriver

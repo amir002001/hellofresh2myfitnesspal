@@ -23,9 +23,9 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
-    @app.route('/convert', methods=['post'])
-    def postMealToMyFitnessPal():
-        page = request.args.get('page', default = 1, type = int)
-        return 'Hello, World!'
+    @app.route('/myfitnesspal', methods=['POST'])
+    def postMacrosByMealName():
+        mealName = request.args.get('mealName', type=str)
+        return f'{mealName}'
 
     return app
